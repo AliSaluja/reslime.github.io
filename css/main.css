@@ -1,0 +1,124 @@
+/* main style */
+
+.hidden-el{display: none;}
+h1,h2,h3,p,input{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+h3,p{display: inline;}
+h2{font-weight: 300;color: #ffffff;}
+p{font-weight: 300;font-size: 18px;padding-left:3px;}
+h3{font-weight: 350;}
+address{font-style: normal;}
+input{display: block; width:100%;margin-bottom: 16px;background: #ffffff;border-style: solid;border-width: 1px;border-color:#4682b4;color:#4682b4;padding:8px;}
+
+/* just for style */
+
+.about-me
+{
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.status-bar
+{
+    background: #23415a;
+    height: 25px;
+}
+
+.background
+{
+    background: #4682b4;
+    height: 226px;
+}
+
+.background-avatar
+{
+    display: flex;
+    padding-top:26px;
+    justify-content: center;
+}
+
+.background-avatar-back
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    width: 168px;
+    height: 168px;
+    border-radius: 100%;
+}
+
+.background-avatar-front
+{
+    background: url(../img/39642490.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+address
+{
+    margin-top: 26px;
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-bottom: 26px;
+}
+
+.background-name
+{
+    background-color: #23415a;
+}
+
+h2
+{
+    margin: 0;
+    text-align: center;
+    padding: 14px;
+    padding-top: 10px;
+}
+
+.button-wrapper
+{
+    margin-top: 0px;
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-bottom: 42px;
+}
+
+/* just for responsible design */
+
+@media all and (max-width: 471px)
+{
+    .about-me,.status-bar{width: 100vw;}
+    .about-me{height: 100vh;}
+    .status-bar{height: 30px}
+
+}
+
+@media all and (min-width: 471px)
+{
+    .about-me,.status-bar
+    {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .about-me
+    {
+        margin-top: -20px;
+        width:400px;
+        height: 572px;
+    }
+    
+    .main
+    {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+}
